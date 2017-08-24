@@ -1,0 +1,14 @@
+<!--index.wxml-->
+<view class="container">
+  <view>
+    <textarea bindinput="bindEncryptedInput" class="entrypted" maxlength="-1"/>
+  </view>
+  <view>
+    密码
+    <input type="password" bindinput="bindPasswordInput" class="password"/>
+    <button bindtap="bindDecrypt" class="button">解密</button>
+  </view>
+  <view class="decrypted">
+    <text class="decrypted">{{decrypted}}</text>
+  </view>
+</view>
